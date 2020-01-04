@@ -1,9 +1,9 @@
-package com.stu.fileserver;
+package com.stu.fileservice;
 
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FileServerApplicationTests {
+class FileServiceApplicationTests {
 
     void contextLoads() {
     }

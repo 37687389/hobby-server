@@ -10,7 +10,7 @@
     <groupId>com.stu</groupId>
     <artifactId>fileserver</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>server-file</name>
+    <name>service-file</name>
     <description>文件管理</description>
 
     <properties>

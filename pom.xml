@@ -22,6 +22,7 @@
         <module>eureka-server</module>
         <module>service-hi</module>
         <module>service-hei</module>
+        <module>service-file</module>
         <module>service-gateway</module>
     </modules>
 

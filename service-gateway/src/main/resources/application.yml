@@ -14,14 +14,21 @@ spring:
       - id: service-hi
         uri: lb://SERVICE-HI
         predicates:
-          - Path=/demo/**
+          - Path=/service-hi/**
         filters:
           - StripPrefix=1
           - RequestTime=true
       - id: service-hei
         uri: lb://SERVICE-HEI
         predicates:
-          - Path=/demo1/**
+          - Path=/service-hei/**
+        filters:
+          - StripPrefix=1
+          - RequestTime=true
+      - id: service-file
+        uri: lb://SERVICE-FILE
+        predicates:
+          - Path=/service-file/**
         filters:
           - StripPrefix=1
           - RequestTime=true

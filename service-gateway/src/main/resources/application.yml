@@ -37,7 +37,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://118.190.107.186:8761/eureka/
-
+  instance:
+    leaseRenewalIntervalInSeconds: 5 #发送给服务端的心跳频率
+    leaseExpirationDurationInSeconds: 10 #等待下一次心跳的时间
 logging:
   level:
     org.springframework.cloud.gateway: debug

@@ -1,4 +1,4 @@
-package com.stu.fileservice;
+package com.stu.file;
 
 import org.springframework.boot.test.context.SpringBootTest;
 

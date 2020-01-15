@@ -4,7 +4,14 @@ server:
 spring:
   application:
     name: service-file
-
+  servlet:
+    multipart:
+      enabled: true # 开启 multipart 上传功能
+      file-size-threshold: 2KB # 文件写入磁盘的阈值
+      max-file-size: 200MB # 最大文件大小
+      max-request-size: 215MB # 最大请求大小
+file:
+  upload-dir: ./uploads  #文件存放路径
 eureka:
   client:
     serviceUrl:

@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.stu</groupId>
-    <artifactId>fileserver</artifactId>
+    <artifactId>file-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>service-file</name>
     <description>文件管理</description>
@@ -41,6 +41,10 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 

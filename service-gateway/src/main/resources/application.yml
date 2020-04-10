@@ -46,6 +46,13 @@ spring:
         filters:
           - StripPrefix=1
           - RequestTime=true
+      - id: service-main
+        uri: lb://service-main
+        predicates:
+          - Path=/service-main/**
+        filters:
+          - StripPrefix=1
+          - RequestTime=true
 eureka:
   client:
     service-url:

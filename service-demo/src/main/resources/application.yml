@@ -1,14 +1,9 @@
 server:
-  port: 8762
+  port: 8764
 
 spring:
   application:
-    name: service-hi
-  redis:
-    host: 118.190.107.186
-    post: 6379
-    password: root
-
+    name: service-demo
 eureka:
   client:
     serviceUrl:

@@ -29,15 +29,14 @@
         <module>service-gateway</module>
         <!-- 邮件服务 -->
         <module>service-mail</module>
+        <module>hobby-common-util</module>
 
         <!--demo -->
         <module>service-hi</module>
         <module>service-hei</module>
 
-        <module>service-demo1</module>
         <module>service-main</module>
         <module>service-demo</module>
-        <module>service-demo2</module>
 
     </modules>
 

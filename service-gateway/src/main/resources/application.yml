@@ -32,7 +32,20 @@ spring:
         filters:
           - StripPrefix=1
           - RequestTime=true
-
+      - id: service-demo
+        uri: lb://service-demo
+        predicates:
+          - Path=/service-demo/**
+        filters:
+          - StripPrefix=1
+          - RequestTime=true
+      - id: service-demo2
+        uri: http://localhost:8767
+        predicates:
+          - Path=/service-demo2/**
+        filters:
+          - StripPrefix=1
+          - RequestTime=true
 eureka:
   client:
     service-url:

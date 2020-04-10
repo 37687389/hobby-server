@@ -1,6 +1,7 @@
 package com.stu.servicehi.controller;
 
 import com.stu.servicehi.feign.FeignService;
+import com.stu.servicehi.feign.FeignService1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,10 +18,24 @@ public class HiController {
     @Autowired
     private FeignService feignService;
     @Autowired
+    private FeignService1 feignService1;
+    @Autowired
     StringRedisTemplate stringRedisTemplate;
     @GetMapping(value = "/getAll")
     public String getStu(){
         return this.feignService.getAllStudent();
+    }
+    @GetMapping(value = "/getName")
+    public String getName(){
+        String name = this.feignService.getName();
+        System.out.println(name);
+        return name;
+    }
+    @GetMapping(value = "/getName1")
+    public String getName1(){
+        String name = this.feignService1.getName();
+        System.out.println(name);
+        return name;
     }
     @GetMapping(value = "/setValue")
     public String setValue(){

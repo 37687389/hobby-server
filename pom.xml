@@ -23,13 +23,22 @@
         <module>eureka-server</module>
         <!--配置中心 -->
         <module>config-server</module>
-        <!--demo -->
-        <module>service-hi</module>
-        <module>service-hei</module>
         <!--文件服务 -->
         <module>service-file</module>
         <!--网关 -->
         <module>service-gateway</module>
+        <!-- 邮件服务 -->
+        <module>service-mail</module>
+
+        <!--demo -->
+        <module>service-hi</module>
+        <module>service-hei</module>
+
+        <module>service-demo1</module>
+        <module>service-main</module>
+        <module>service-demo</module>
+        <module>service-demo2</module>
+
     </modules>
 
     <properties>

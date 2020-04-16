@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: service-main
+  redis:
+    host: 118.190.107.186
+    post: 6379
+    password: root
 eureka:
   client:
     serviceUrl:

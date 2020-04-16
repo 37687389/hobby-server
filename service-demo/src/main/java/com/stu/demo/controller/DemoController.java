@@ -1,5 +1,6 @@
 package com.stu.demo.controller;
 
+import com.stu.common.ResponseData;
 import com.stu.demo.feign.FeignService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
@@ -44,5 +46,13 @@ public class DemoController {
             map.put(key, value);
         }
         return map;
+    }
+    @GetMapping("/getUserInfo")
+    public ResponseData getUserInfo(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        Object loginUserId = session.getAttribute("loginUserId");
+        ResponseData res = ResponseData.success("登录成功", loginUserId);
+        System.out.println(res);
+        return ResponseData.success("登录成功",loginUserId);
     }
 }

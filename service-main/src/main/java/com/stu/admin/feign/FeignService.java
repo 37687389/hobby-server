@@ -1,5 +1,6 @@
 package com.stu.admin.feign;
 
+import com.stu.common.ResponseData;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 //@FeignClient(value = "github", url = "${github.url}")//三方调用
@@ -11,4 +12,7 @@ public interface FeignService {
      */
     @GetMapping(value = "/getName")
     String getName();
+    @GetMapping(value = "/getUserInfo")
+    ResponseData getUserInfo();
+
 }

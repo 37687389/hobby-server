@@ -37,6 +37,7 @@
 
         <module>service-main</module>
         <module>service-demo</module>
+        <module>nacos-service1</module>
 
     </modules>
 
@@ -45,6 +46,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring.cloud.alibaba.version>2.0.0.RELEASE</spring.cloud.alibaba.version>
     </properties>
 
     <dependencies>
@@ -61,6 +63,14 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

@@ -59,7 +59,7 @@
             <artifactId>spring-session-data-redis</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.stu.common</groupId>
+            <groupId>com.stu</groupId>
             <artifactId>hobby-common-util</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

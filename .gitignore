@@ -1,4 +1,5 @@
-/target/
+# maven
+target
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -19,9 +20,8 @@
 
 ### NetBeans ###
 /nbproject/private/
-/build/
+build
 /nbbuild/
-/dist/
+dist
 /nbdist/
 /.nb-gradle/
-.gitignore
